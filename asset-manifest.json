@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.e523d9d4.css",
-    "main.js": "/Portfolio/static/js/main.dcd52f5f.js",
+    "main.js": "/Portfolio/static/js/main.8642a52f.js",
     "static/media/topntown.png": "/Portfolio/static/media/topntown.3395fa8a60630454aae4.png",
     "static/media/users.png": "/Portfolio/static/media/users.79cb0a22b92302dc00b6.png",
     "static/media/bgvideo.mp4": "/Portfolio/static/media/bgvideo.e8abf55e7aa066bd1e9c.mp4",
-    "static/media/Manish CV.pdf": "/Portfolio/static/media/Manish CV.21a72fdd03475d5564e6.pdf",
+    "static/media/Manish Resume CV.pdf": "/Portfolio/static/media/Manish Resume CV.6b2aeb1e02c3787c5cb6.pdf",
     "static/media/computerlog-copy.png": "/Portfolio/static/media/computerlog-copy.4f79bc060de0d16c8ec4.png",
     "static/media/screencapture-manishtalmale-github-io-Invoice-2023-06-20-18_43_06.png": "/Portfolio/static/media/screencapture-manishtalmale-github-io-Invoice-2023-06-20-18_43_06.484b386a19323957a544.png",
     "static/media/img3.png": "/Portfolio/static/media/img3.ccd0206753aba83b2efe.png",
     "static/media/img2.png": "/Portfolio/static/media/img2.83902cddc2e3af142e0e.png",
     "index.html": "/Portfolio/index.html",
     "main.e523d9d4.css.map": "/Portfolio/static/css/main.e523d9d4.css.map",
-    "main.dcd52f5f.js.map": "/Portfolio/static/js/main.dcd52f5f.js.map"
+    "main.8642a52f.js.map": "/Portfolio/static/js/main.8642a52f.js.map"
   },
   "entrypoints": [
     "static/css/main.e523d9d4.css",
-    "static/js/main.dcd52f5f.js"
+    "static/js/main.8642a52f.js"
   ]
 }
