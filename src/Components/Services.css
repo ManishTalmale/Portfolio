@@ -1,0 +1,85 @@
+.abc{
+    transition: 0.5s, tranform 0.5s;
+
+}
+.abc :hover{
+    background-color: purple;
+    /* transform: translateY(-10px); */
+}
+/* .abc :hover {
+    box-shadow: 0 5px 6px white, 0 3px 6px white;
+  } */
+.gap{
+    margin:0 15px 5px 10px;
+}
+.blur {
+    transition: blur-shadow .3s;
+    border-radius:10px;
+    border: 1px solid #ccc;
+    float: left;
+    
+  }
+  .blur:hover {
+    box-shadow: 0 0 11px white; 
+  }
+
+  .element {
+    display: inline-block;
+    padding-bottom: 3px;
+    
+  }
+  .element:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 5px;
+    border-radius:5px;
+    animation: underline 2s infinite;
+    /* visibility: dark; */
+  }
+  @keyframes underline {
+    0% { width: 0%; background-color:white;}
+    100% {width: 100%; background-color: transparent;}
+  }
+  .awesome1 {
+      animation:colorchange 2s infinite alternate; 
+    }
+  
+    @keyframes colorchange {
+      0% {
+        
+        color: purple;
+      }          
+      /* 10%{
+        color:red;
+      } */
+    }
+.link2{
+  margin-top: 30px;
+}
+    @media (min-width:0px) and (max-width: 767px){
+      #Grid{
+        margin-left:-1em;
+      }
+    }
+    @media (min-width:768px) and (max-width: 991px){
+.CARD1{
+  width: 22em;
+  margin-left: -1.1em;
+}
+.CARD2{
+  width: 22em;
+  margin-left: 22em;
+  margin-top: -13.3em;
+  height: 12.5em;
+}
+.CARD3{
+  margin-top: 1em;
+  width: 22em;
+  margin-left: 11em;
+}
+.link3{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+    }

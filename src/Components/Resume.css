@@ -1,0 +1,32 @@
+.down1{
+    background-color: white;
+    height: 1px;
+    border-radius: 5px;
+    margin-right: 1em;
+  }
+  .resumebut{
+    margin-top: 15em;
+  }
+  @media (min-width:0px) and (max-width: 767px){
+    #resbut{
+      margin-left: -2em;
+    }
+    #templete{
+      margin-left: -1em;
+    }
+  }
+
+  @media (min-width:768px) and (max-width:991px){
+.resumebut{
+  margin-top: -1em;
+}
+.downtab{
+  margin-left: -1em;
+}
+.resume{
+  margin-left: 16.8em;
+}
+.foot-text{
+  margin-right: 2.7em;
+}
+  }

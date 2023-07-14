@@ -1,0 +1,482 @@
+.element {
+	display: inline-block;
+	padding-bottom: 3px;
+  margin-left: 3em;
+}
+.element:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 5px;
+  border-radius:5px;
+	animation: underline 2s infinite;
+  /* visibility: dark; */
+}
+@keyframes underline {
+  0% { width: 0%; background-color:white;}
+  100% {width: 100%; background-color: transparent;}
+}
+.awesome1 {
+    animation:colorchange 2s infinite alternate; 
+  }
+
+  @keyframes colorchange {
+    0% {
+      
+      color: purple;
+    }          
+    /* 10%{
+      color:red;
+    } */
+  }
+
+  .wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+
+  .navbar-fixed-top {
+    /* position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1; */
+    position: fixed;
+   top: 0;
+    left: 0;
+    width: 100%;
+    z-index:1;
+    /* box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%); */
+    background-color: rgba(148, 0, 211, 0.29) !important;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    -webkit-backdrop-filter: blur(8px);
+     backdrop-filter: blur(8px);
+  /* background: white; */
+}
+/* .nav {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  } */
+
+
+.navbar-fixed-top.cbp-af-header-shrink {
+	padding: 10px 0;
+}
+
+ .img1.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+.img1.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+
+#header{
+  width: 100%;
+  height: 100vh;
+  /* background-image: url(Images/background.png); */
+  background-size: cover;
+  background-position: center;
+}
+/* .container{
+  padding: 10px 10%;
+} */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav h1{
+  font-size: 40px;
+  margin-top: 10px;
+}
+nav h1 span{
+  color: purple;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: purple;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.header-text{
+  margin-top: 25%;
+  font-size: 20px;
+}
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h1 span{
+  color: purple;
+}
+#sidemenu{
+  cursor: pointer;
+}
+
+li a:hover{
+  color: purple;
+  
+}
+.zoom {
+  transition: transform .1s;
+  margin: 0 auto;
+}
+.self_l{
+  margin-right: 5em;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+/* ------css for small screens--------- */
+
+nav .fa-solid{
+  display: none;
+}
+.arrange{
+  height: 4em;
+}
+
+@media (min-width:0px) and (max-width: 767px){
+#self{
+margin-left: -4.5em;
+margin-top: 1em;
+margin-bottom: -2em;
+}
+  #nav-text{
+  display: none;
+  }
+#type2{
+  margin-left: -0.6em;
+}
+#row1{
+  margin-top: 6.5em;
+}
+#img1{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#intro{
+  margin-top: 2em;
+}
+#intro2{
+  margin-left: -0.9em;
+}
+#img2{
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+}
+  .header-text h1{
+      font-size: 30px ;
+  }
+  nav .fa-solid{
+      display: block;
+      font-size: 25px;
+  }
+  /* nav ul{
+      background: #ff004f;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.5s;
+  } */
+  /* nav ul li{
+      display: flex;
+      margin: 25px;
+  }
+  nav ul .fa-solid{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+  } */
+  .Abc{
+    font-size: 40px !important;
+  } 
+}
+
+.INTRODUCE{
+  margin-left: 70px;
+  font-size: 2.6em;
+  color: white;
+}
+
+
+@media (min-width:768px) and (max-width:990px){
+.first{
+  margin-left: -2em;
+}
+  #myname{
+  text-align: center;
+}
+.letme{
+  margin-top: 7em;
+  text-align: center;
+  margin-left:-1em;
+}
+.man{
+  margin-left: 1em;
+}
+.self_l{
+  margin-top: -6em;
+  margin-left: 15em;
+  margin-bottom: -1em;
+}
+.navname{
+  margin-right: -1em;
+}
+.myAvtar{
+  margin-top: 25em;
+}
+
+
+}
+ 
+
+@media (min-width:992px) and (max-width:1400px){
+  .img-content{
+  height: 5em;
+}
+}
+
+
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+}
+/* @media(min-width:375px) and (max-width: 426px){
+  #header{
+    background-image: url(Images/phone-background.png);
+    width: 375px;
+    
+}
+
+} */
+
+.img:hover{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow:0px 4px 4px 10px red;
+  object-fit: cover;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+  background: #262626;
+} */
+
+section ul {
+  margin-top: 110px;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+section ul li a {
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  transition: .5s;
+}
+
+section ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: purple;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+section ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 35px purple;
+}
+
+section ul li a:hover {
+  color: aqua;
+  box-shadow: 0 0 5px purple;
+  text-shadow: 0 0 5px purple;
+}
+.content{
+color: white;
+z-index: 1;
+position: absolute;
+/* margin-top: -500px; */
+}
+.bgvideo{
+  /* position: relative; */
+  /* background-position: center; */
+  /* background-size:100%;
+  height:400vh;
+  width: auto; */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 36px;
+}
+/* .typing{
+  font-family: sans-serif;
+  font-weight:800;
+  font-size:40px;
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:green;
+} */
+
+/* .data{
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+.data1{
+  color:#f01717;
+  font-family:Garamond, serif;
+  font-weight:bold;
+  font-size:65px;
+  letter-spacing:0px;
+  text-transform:none;
+  text-align:center;
+  opacity:1;
+  -webkit-text-stroke:0px #FF0000;
+text-shadow:1px -3px 8px #FF0000;
+  padding-right: 2px;
+  animation: blink 0.6s infinite;} */
+
+  
+  .text_1 {
+    animation: text1;
+  }
+  
+  .text_2 {
+    animation: text2;
+  }
+  
+  .text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 20s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  
+  .text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+  
+  @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 14em;
+    }
+  }
+  
+  @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 12em;
+    }
+  }
+  
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
